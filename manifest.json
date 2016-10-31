@@ -1,0 +1,31 @@
+{
+    "manifest_version": 2,
+    "content_scripts": [ {
+        "exclude_globs":    [  ],
+        "include_globs":    [ "*" ],
+        "js":               [ "script.js" ],
+        "matches":          [
+          "https://m.facebook.com/*",
+          "http://m.facebook.com/*"
+        ],
+        "run_at": "document_end"
+    }, {
+        "exclude_globs":    [  ],
+        "include_globs":    [ "*" ],
+        "js":               [ "script.forward.js" ],
+        "matches":          [
+          "https://www.facebook.com/*",
+          "http://facebook.com/*"
+        ],
+        "run_at": "document_start"
+    } ],
+    "converted_from_user_script": true,
+    "description":  "Improves the experience of the mobile version of facebook on desktop browsers. Forces mobile version.",
+    "name":         "Facebook Mobile for Desktop",
+    "version":      "1.0.0",
+    "icons": {
+      "16": "icon16.png",
+      "48": "icon48.png",
+      "128": "icon128.png"
+    }
+}
