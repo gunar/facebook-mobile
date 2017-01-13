@@ -12,5 +12,6 @@
   }
 
   addGlobalStyle('body { width: 600px; margin-left: calc(50% - 300px) !important; }');
+  addGlobalStyle('textarea { height: 300px; }');
 
 })();
