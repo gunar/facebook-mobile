@@ -13,5 +13,6 @@
 
   addGlobalStyle('body { width: 600px; margin-left: calc(50% - 300px) !important; }');
   addGlobalStyle('textarea { height: 300px; }');
+  addGlobalStyle('div.messageAttachments i.img { width: 250px !important; height: 250px !important; }');
 
 })();
